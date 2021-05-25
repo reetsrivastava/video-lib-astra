@@ -1,0 +1,13 @@
+.modal-show {
+    position: absolute;
+    border: 3px solid black;
+    padding: 1rem;
+    bottom: 2rem;
+    right: 2rem;
+    background-color: #fff;
+    width: fit-content;
+}
+
+.modal--icon {
+    font-size: 1rem;
+}

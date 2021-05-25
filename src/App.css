@@ -1,0 +1,551 @@
+:root {
+  --light-gray: #525357;
+}
+
+.route-link {
+  text-decoration: none;
+}
+
+.nav {
+  position: sticky;
+  background-color: #fff;
+  color: #000 !important;
+  top: 0;
+  box-shadow: 0 0 11px 0 rgb(0 0 0 / 75%);
+  z-index: 4;
+  padding-top: 0.2rem;
+  padding-bottom: 0.3rem;
+  
+}
+
+.link {
+  text-decoration: none;
+  color: black !important;
+}
+
+main {
+  height: 100vh;
+  background-color: rgba(0, 0, 0, 0.05);
+  overflow-y: auto;
+}
+.main-section {
+  display: flex;
+  width: 100%;
+}
+
+.nav--logo {
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr;
+  justify-content: space-between;
+  align-items: center;
+  width:100%;
+}
+
+.nav--logo p {
+  display: flex;
+  align-items: center;
+  font-family: "Train One";
+  color: #20639b;
+  font-size: 2rem;
+  letter-spacing: 0px;
+  margin-left: 4rem;
+  /* margin:auto; */
+}
+
+.video-card {
+  box-shadow: 0px 0px 5px 1px rgba(0, 0, 0, 0.2);
+  cursor: pointer;
+  background-color: #fff;
+}
+
+.empty-text {
+  color: var(--light-gray);
+  margin-bottom: 2rem;
+  font-size: 6rem;
+}
+
+.empty {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 100vh;
+}
+
+.page-heading {
+  margin-left: 4rem;
+  margin-top: 1rem;
+  margin-bottom: 1rem;
+}
+
+.playlist-section .page-heading {
+  margin: 0;
+}
+
+.card--l .card--image {
+  max-width: 32rem;
+  height: auto;
+}
+
+.card--l .card--image {
+  position: relative;
+  height: 100%;
+}
+
+.card--text {
+  font-size: 1.4rem;
+  letter-spacing: 1px;
+  color: #000;
+}
+
+.card--horizontal img {
+  max-width: 24rem !important;
+  height: 15rem;
+}
+
+.filter-button {
+  margin-right: 1rem;
+  text-transform: capitalize;
+  font-size: 1.4rem;
+}
+
+.category-section {
+  max-width: 100%;
+  display: flex;
+  justify-content: flex-start;
+  margin-top: 1.6rem;
+  margin-left: 0.7rem;
+  overflow-y: scroll;
+}
+
+.active {
+  background-color: #606060;
+  color: #fff;
+}
+
+/* Loader */
+.puff-loader {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  z-index: 1;
+}
+
+.card--body {
+  position: relative;
+}
+
+.playlist-section {
+  max-width: 100%;
+  margin-left: 5rem;
+  margin-top: 3rem;
+}
+
+.playlist-wrapper {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: flex-start;
+}
+
+.playlist-container {
+  margin-top: 2rem;
+}
+
+.playlist-section .card--horizontal .card--title {
+  font-size: 2rem;
+}
+
+.playlist-container:nth-child(even) {
+  margin-left: 2rem;
+}
+
+.playlist-card {
+  margin-left: 5rem;
+  margin-top: 3rem;
+}
+
+.card--horizontal {
+  max-width: 100%;
+  width: 50rem;
+}
+
+.playlist-delete .card--dismiss {
+  color: #000;
+}
+
+.playlist-card-section {
+  display: flex;
+  flex-wrap: wrap;
+}
+
+/* Modal Css */
+.modal--input {
+  text-align: center;
+  margin-bottom: 1.5rem;
+}
+
+.modal--input-box {
+  font-size: 1.2rem;
+  padding: 0.6rem;
+  width: 70%;
+  border: none;
+  border-bottom: 2px solid var(--light-gray);
+}
+
+.modal--input button {
+  margin-left: 1.0rem;
+}
+
+.playlist-names {
+  margin-left: 1rem;
+  
+}
+
+input[type="checkbox"] {
+  width: 1.5rem; /*Desired width*/
+  height: 1.5rem; /*Desired height*/
+}
+.playlist-names label {
+  margin-left: 1rem;
+  font-size: 2rem;
+}
+
+.modal--window {
+  width: 40rem;
+}
+
+.modal-show {
+  display: block;
+}
+
+.modal-hide {
+  display: none;
+}
+
+.sidebar {
+  width: 100%;
+  max-width: 22rem;
+  height: 88vh;
+  position: sticky;
+  letter-spacing: 0.1rem;
+  font-size: 1.4rem;
+  top: 50px;
+  background-color: #fff;
+}
+
+.sidebar-active {
+  display: block;
+}
+
+.sidebar-inactive {
+  display: none;
+}
+
+.sidebar--item {
+  font-weight: 700;
+  display: inline-block;
+  line-height: 6.5rem;
+  /* padding-left: 4rem; */
+  border-bottom: 1px solid rgba(0, 0, 0, 0.05);
+  width: 100%;
+  font-size: 1rem;
+  transition: background-color 0.5s ease;
+}
+
+.sidebar--item:hover {
+  background-color: #f3f3f3 !important;
+}
+
+.sidebar ul li ion-icon {
+  margin-top: 0.2rem;
+  margin-right: 1.6rem;
+}
+
+.sidebar .route-link {
+  color: #363333;
+}
+
+.ham-menu {
+  /* position: absolute; */
+  font-size: 3rem;
+  /* top: 12px; */
+  margin:auto;
+  cursor: pointer;
+  /* display: block; */
+}
+
+.video-list-section {
+  display: flex;
+  flex-wrap: wrap;
+  margin-left: 2rem;
+  max-width: 100%;
+  align-items: center;
+  justify-content: center;
+}
+
+.video-list-section .card {
+  margin: 2rem;
+}
+.video-player-section {
+  width: 100%;
+  margin-top: 2rem;
+  margin: 2rem 1rem;
+}
+
+.video-heading {
+  margin-top: 1.4rem;
+}
+
+.player {
+  width: auto;
+  height: 550px;
+}
+
+.player-btn-container {
+  display: flex;
+  justify-content: flex-end;
+  align-items: baseline;
+  color: var(--light-gray);
+}
+
+.player-icon-set {
+  /* padding-top: 1.6rem; */
+  padding-left: 1.6rem;
+  cursor: pointer;
+}
+
+.player-icon-set ion-icon {
+  font-size: 2rem;
+}
+.player-button-text {
+  padding-top: 0.3rem;
+  padding-left: 0.3rem;
+  font-weight: 700;
+  padding-bottom: 0;
+}
+
+.btn--icon {
+  padding-right: 0px;
+}
+
+.video-wrapper {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.video-category p {
+  font-weight: 700;
+  font-size: 2rem;
+}
+
+.watchlist-active {
+  color: #2894ec;
+}
+
+.likelist-active {
+  color: #2894ec;
+}
+
+.video-section {
+  display: flex;
+  max-width: 100%;
+  flex-direction: column;
+  margin-left: 2rem;
+}
+
+.video-page {
+  display: flex;
+  flex-wrap: wrap;
+  margin-top: 1.6rem;
+  overflow-y: hidden;
+  overflow-x: hidden;
+}
+
+.video-page .card {
+  margin: 1rem;
+}
+
+.card--image {
+  max-width: 25rem;
+  height: auto;
+}
+
+.card--title {
+  font-size: 1.4rem;
+  letter-spacing: 0.5px;
+  font-weight: 400;
+  color: #000;
+}
+
+.card--text {
+  font-weight: 700;
+  color: var(--light-gray) !important;
+}
+
+
+@media (max-width: 786px) {
+
+  .main-section {
+    flex-direction: column;
+    margin: auto;
+    justify-content: center;
+  }
+
+  .nav--logo p {
+    font-size: 2rem;
+  }
+
+  .page-heading {
+    margin-left: 2rem;
+    margin-top: 1rem;
+    margin-bottom: 1rem;
+  }
+
+  .card--l .card--image {
+    width: 100%;
+    height: auto;
+  }
+
+  .card--l {
+    width: 100% !important;
+  }
+
+  .card--title {
+    font-size: 2rem !important;
+  }
+
+  .card--text {
+    font-size: 1.7rem !important;
+  }
+
+  .filter-button {
+    min-width: fit-content;
+  }
+
+  .puff-loader {
+    left: 40%;
+  }
+
+  .playlist-section {
+    margin: 0;
+  }
+
+  .playlist-container {
+    width: 100%;
+  }
+  .playlist-container:nth-child(even) {
+    margin-left: 0;
+  }
+
+  .playlist-section .card--horizontal {
+    width: 100%;
+  }
+  .playlist-section .card--horizontal .btn {
+    padding: 0.6rem 0.8rem;
+  }
+
+  .playlist-section .page-heading {
+    margin-left: 2rem;
+    margin-top: 1rem;
+    margin-bottom: 1rem;
+  }
+
+  .modal--window {
+    max-width: 90%;
+  }
+
+  .sidebar {
+    position: absolute;
+    top: 0;
+    z-index: 3;
+    height: 100%;
+  }
+
+  .sidebar ul {
+    margin-top: 5rem;
+  }
+  .sidebar-active {
+    display: none;
+  }
+
+  .sidebar-inactive {
+    display: block;
+  }
+
+  .video-list-section {
+    margin: 0;
+  }
+
+  .video-list-section .card {
+    max-width: 100% !important;
+    margin: 0;
+  }
+
+  .video-list-section .card--image {
+    max-width: 100%;
+    height: auto;
+  }
+
+  .video-list-section .link {
+    width: 100%;
+  }
+
+  .video-list-section img {
+    width: 100%;
+    margin: 0;
+  }
+
+  .player {
+    height: 0;
+    position: relative;
+    padding-top: 56.25%;
+  }
+  .react-player {
+    position: absolute;
+    top: 0;
+    left: 0;
+  }
+
+  .video-player-section {
+    margin: 0;
+  }
+
+  .video-wrapper {
+    margin: 1rem;
+    flex-direction: column;
+  }
+  .video-category {
+    align-self: flex-start;
+    margin-bottom: 1rem;
+  }
+
+  .video-heading {
+    margin: 1rem;
+  }
+
+  .player-icon-set {
+    padding: 1.5rem !important;
+  }
+
+  .video-section {
+    margin: 0;
+  }
+  .video-page .card {
+    max-width: 100%;
+    margin: 0;
+  }
+
+  .video-page .card--image {
+    max-width: 100%;
+    height: auto;
+  }
+
+  .video-page .link {
+    width: 100%;
+  }
+
+  .video-page img {
+    width: 100%;
+    margin: 0;
+  }
+}
